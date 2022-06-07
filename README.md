@@ -17,7 +17,7 @@ pluginAuth.cpython-37m-x86_64-linux-gnu.so pluginAuth.so 因为编译了，暂�
 1. 先装一个 宝塔面板 然后装好环境， 然后 创建1个站点 - 	example.com / www.example.com （必须填这个域名 用来hosts 重定向的 pluginAuth.so 列表里的 域名是这个） 
 2. 创建站点 - 绑定自己的域名 例如： 520.com / www.520.com 申请ssl 导入伪静态 如下：  
 ```
-  if (!-d $request_filename){
+if (!-d $request_filename){
 	set $rule_0 1$rule_0;
 }
 if (!-f $request_filename){
