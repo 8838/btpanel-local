@@ -34,3 +34,4 @@ if ($rule_0 = "21"){
 
 ```
 4. 自己域名站点下目录 创建 panel 和 api 文件 把 get_plugin_list.json文件 放到panel文件里，token.json文件 放到api文件里 然后访问 http://domian.com/panel/get_plugin_list / http://domian.com/api/GetToken 看看 能不能访问！（这两个文件在 项目 data 目录里下载 ）
+5. 最后确保以上都操作对了，然后把 宝塔面板里 /www/server/panel/class 目录下面 官方的so 全部删除：libAuth.aarch64.so libAuth.glibc-2.14.x86_64.so libAuth.loongarch64.so libAuth.x86-64.so libAuth.x86.so pluginAuth.cpython-37m-aarch64-linux-gnu.so pluginAuth.cpython-37m-i386-linux-gnu.so pluginAuth.cpython-37m-loongarch64-linux-gnu.so pluginAuth.cpython-37m-x86_64-linux-gnu.so pluginAuth.cpython-310-aarch64-linux-gnu.so pluginAuth.so 然后 下载项目里的 panelPlugin.py panelSSL.py pluginAuth.cpython-37m-x86_64-linux-gnu.so pluginAuth.so  四个文件 放进去 把 panelSSL.py 里 第 1042 行 rtmp = public.httpPost('http://www.example.com/api'+'/GetToken',pdata)   替换成 你的伪登录token接口 例如：rtmp = public.httpPost('http://www.domian.com/api'+'/GetToken',pdata)
