@@ -40,6 +40,6 @@ if ($rule_0 = "21"){
 8. 然后 下载项目里的 panelPlugin.py panelSSL.py pluginAuth.cpython-37m-x86_64-linux-gnu.so pluginAuth.so  四个文件 放进去 把 panelSSL.py 里 第 1042 行 rtmp = public.httpPost('http://www.example.com/api'+'/GetToken',pdata)   替换成 你的伪登录token接口 例如：rtmp = public.httpPost('http://www.domian.com/api'+'/GetToken',pdata)
 9. 修改 etc/hosts 指引到：  
 ```
-107.148.146.175 example.com
-107.148.146.175 www.example.com
+你服务器IP example.com
+你服务器IP www.example.com
 ```
