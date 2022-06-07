@@ -7,4 +7,4 @@
   
 pluginAuth.cpython-37m-x86_64-linux-gnu.so pluginAuth.so 因为编译了，暂时不开源，防止泛滥，如果担心安全可以关闭本GitHub项目，懂代码的大佬可以自己拖到 IDA 查看代码！  
   
-#123
+# 123
