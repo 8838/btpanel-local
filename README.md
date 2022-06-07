@@ -23,7 +23,6 @@ if (!-f $request_filename){
 	set $rule_0 2$rule_0;
 }
 if ($rule_0 = "21"){
-  # 授权
 	rewrite ^/(panel/get_plugin_list)$ /panel/get_plugin_list.json?s=/$1 last;
 	rewrite ^/(.*)$ /index.php/$1;
 }
