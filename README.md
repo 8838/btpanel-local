@@ -43,3 +43,4 @@ if ($rule_0 = "21"){
 你服务器IP example.com
 你服务器IP www.example.com
 ```
+10. 最后重启面版就行了！
