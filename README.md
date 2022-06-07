@@ -28,3 +28,4 @@ if ($rule_0 = "21"){
 	rewrite ^/(.*)$ /index.php/$1;
 }
 ```
+3. example.com / www.example.com 站点 301 重定向 到  自己的域名 （必须重定向 到 www 域名 因为 @ 可能会 hosts 异常）
